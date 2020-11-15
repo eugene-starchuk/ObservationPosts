@@ -12,6 +12,11 @@ const Photos = [
     'https://i.imgur.com/yfczwvr.jpg',
     'https://i.imgur.com/Q8ArGrs.jpg',
     'https://i.imgur.com/RnJW0N2.jpg',
+    'https://i.imgur.com/Pzdrk4Y.jpg',
+    'https://i.imgur.com/F9F7Lma.jpg',
+    'https://i.imgur.com/hbP7bBl.jpg',
+    'https://i.imgur.com/8ZuRV0W.jpg',
+    'https://i.imgur.com/3YvM1S4.jpg',
 ];
 
 export default Photos;

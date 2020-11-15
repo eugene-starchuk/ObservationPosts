@@ -1,15 +1,22 @@
-// import classnames from 'classnames';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
-// import useGlobal from '../../../hooks/store';
+import useGlobal from '../../../hooks/store';
 
 const Item = (props) => {
     const { source, index } = props;
+    const [store, actions] = useGlobal();
+    const handleClick = () => {
+        actions.setSelectedImage(index);
+        actions.setSelectedSource(source);
+    };
     return (
         <div
             className='itemContainer'
         >
             <div
-                className='imageContainer'
+                role='presentation'
+                className={classnames('imageContainer', { selected: store.selectedImage === index })}
+                onClick={handleClick}
             >
                 <img
                     index={index}

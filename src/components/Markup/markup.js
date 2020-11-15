@@ -1,4 +1,3 @@
-
 import '../../sass/main.sass';
 import Content from './Content/content';
 import useGlobal from '../../hooks/store';
@@ -11,6 +10,7 @@ const Markup = () => {
         <div className='markup'>
             {store.selectedMenuIndex === 0 && <Content />}
             {store.selectedMenuIndex === 1 && <Gallery />}
+            {/* <Gallery /> */}
         </div>
     );
 };
